@@ -8,6 +8,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
+	log.Printf("new request " + r.URL.Host)
 	ret := r.URL.Query()
 	a, _ := strconv.ParseInt(ret.Get("a"), 10, 32)
 	b, _ := strconv.ParseInt(ret.Get("b"), 10, 32)
