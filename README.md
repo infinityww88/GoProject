@@ -1,0 +1,2 @@
+# GoProject
+Learn golang
